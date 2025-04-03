@@ -1,0 +1,190 @@
+.food-banks-container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.food-banks-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.food-banks-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-family: "Marcellus", serif;
+}
+
+.food-banks-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.map-container {
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.food-banks-list {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.food-banks-list h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Marcellus", serif;
+}
+
+.food-banks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.food-bank-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-bank-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.food-bank-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.food-bank-card p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.view-details-btn {
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #d44117;
+}
+
+.info-window {
+  padding: 0.5rem;
+  max-width: 250px;
+}
+
+.info-window h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.info-window p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.directions-link {
+  display: inline-block;
+  background-color: #FF4500;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.directions-link:hover {
+  background-color: #d44117;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .food-banks-container {
+    margin: 1rem;
+  }
+
+  .map-container {
+    margin-bottom: 2rem;
+  }
+
+  .food-banks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .food-banks-list {
+    padding: 1rem;
+  }
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  padding: 8px;
+}
+
+.leaflet-popup-content h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.leaflet-popup-content p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.leaflet-popup-content .directions-link {
+  margin-top: 0.75rem;
+  display: inline-block;
+} 

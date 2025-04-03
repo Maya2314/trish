@@ -1,0 +1,51 @@
+.rating-container {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.rating-stars .MuiRating-root {
+  font-size: 2rem;
+}
+
+.rating-comment {
+  margin: 20px 0;
+}
+
+.rating-submit {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.rating-submit:disabled {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+/* Hover effects */
+.rating-stars .MuiRating-root:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animation for star selection */
+@keyframes starPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.rating-stars .MuiRating-root.Mui-selected {
+  animation: starPop 0.2s ease-in-out;
+} 
